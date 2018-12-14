@@ -60,10 +60,11 @@ int main()
         char *ptr2 = nullptr;
 
         ptr1 = strstr(buffer, "Location:");
+        std::cout << "Recv: " << buffer << std::endl;
 
         if (ptr1)
         {
-//            std::cout << "Recv: " << buffer << std::endl;
+            std::cout << "Recv: " << buffer << std::endl;
             std::cout << "New device" << std::endl;
 
             ptr2 = strstr(ptr1,":");
